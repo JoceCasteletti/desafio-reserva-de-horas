@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jocelyn Casteletti Sandoval">
+  <meta name="description" content="Reserva de horas.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <title>Reserva de horas.</title>
+</head>
+
+<body class="container">
+  <!-- Material form register -->
+  <div class="card">
+    <h5 class="card-header bg-info text-white text-center py-4">
+      <strong>Reserva tu hora</strong>
+    </h5>
+    <div class="container-img">
+      <div>
+        <img src="./assets/img//logo medico.png" class="img-fluid ounded mx-auto d-block" width="1200" height="600"
+          alt="reserva-hora">
+      </div>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+      <!-- Form -->
+      <form id="register" class="text-center mt-4" style="color: #757575;" action="#!">
+        <div class="form-row">
+          <div class="col">
+            <!-- First name -->
+            <div class="md-form mt-1">
+              <input type="text" id="name" class="form-control" placeholder="Ingresa tu Nombre">
+              <label for="name">Nombre</label>
+            </div>
+          </div>
+          <div class="col">
+            <!-- Last name -->
+            <div class="md-form mt-1">
+              <input type="text" id="lastName" class="form-control" placeholder="Ingresa tus Apellidos">
+              <label for="lastName">Apellido(s)</label>
+            </div>
+          </div>
+        </div>
+        <!-- Rut -->
+        <div class="md-form mt-2">
+          <input type="text" id="rut" class="form-control" placeholder="Ingresa tu RUT 11111111-1">
+          <label for="rut">RUT</label>
+        </div>
+        <!-- Edad -->
+        <div class="md-form mt-2">
+          <input type="number" id="age" class="form-control" placeholder="Ingresa tu edad">
+          <label for="age">Edad</label>
+        </div>
+        <!-- E-mail -->
+        <div class="md-form mt-2">
+          <input type="email" id="email" class="form-control" placeholder="Ingresa tu E-mail">
+          <label for="email">E-mail</label>
+        </div>
+        <!-- Especialidad -->
+        <div class="form-group btn-outline-info mt-2">
+          <select id="especialidad" class="form-control">
+            <label for="especialidad">Especialidad</label>
+            <option>Selecciona una especialidad</option>
+            <option value="anestesiología">Anestesiología</option>
+            <option value="broncopulmonar">Broncopulmonar</option>
+            <option value="cardiología">Cardiología</option>
+            <option value="cirugia">Cirugía General</option>
+            <option value="dermatología">Dermatología</option>
+            <option value="endocrinología">Endocrinología</option>
+            <option value="fonoaudiología">Fonoaudiología Adulto</option>
+            <option value="ginecología">Ginecología y Obstreticia</option>
+            <option value="hematología">Hematología</option>
+            <option value="infectología">Infectología Adulto</option>
+            <option value="kinesiología">Kinesiología</option>
+            <option value="medicina">Medicina General</option>
+            <option value="neurología">Neurología Pediátrica</option>
+            <option value="nutricionista">Nutricionista</option>
+            <option value="oftalmología">Oftalmología Adulto</option>
+            <option value="oncología">Oncología</option>
+            <option value="pediatría">Pediatría</option>
+            <option value="podologia">Podología</option>
+            <option value="psicología">Psicología Adultos</option>
+            <option value="psicología">Psicopedagogía</option>
+            <option value="traumatología">Traumatología y Ortopedia </option>
+            <option value="urología">Urología</option>
+          </select>
+        </div>
+        <!-- Fecha -->
+        <div class="md-form mt-4">
+          <input type="text" id="date" class="form-control"
+            placeholder="Ingresa tu fecha para agendar la atención 11-11-1111">
+          <label for="date">Fecha</label>
+        </div>
+        <!-- Hora -->
+        <div class="form-group btn-outline-info mt-2">
+          <select id="hour" class="form-control">
+            <label for="hour">Hora</label>
+            <option>Selecciona una hora</option>
+            <option value="08:30">08:30</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="10:15">10:15</option>
+            <option value="10:45">10:45</option>
+            <option value="11:15">11:15</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:45">12:45</option>
+            <option value="13:15">13:15</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:15">15:15</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="16:45">16:45</option>
+            <option value="17:15">17:15</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+          </select>
+        </div>
+        <!-- Sign up button -->
+        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+          type="submit">Reservar</button>
+        <!-- Social register -->
+        <p>Siguenos en :</p>
+        <a type="button" class="icon" class="btn-floating btn-fb btn-sm">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a type="button" class="icon" class="btn-floating btn-tw btn-sm">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a type="button" class="icon" class="btn-floating btn-li btn-sm">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <hr>
+        <!-- Terms of service -->
+        <em>© 2020 Copyright: Centro médico Ñuñoa</em>
+        <p class="text-center">Aut@r Jocelyn Casteletti</p>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>
